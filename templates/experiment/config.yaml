@@ -1,0 +1,37 @@
+autonomy: bounded
+
+seed: 42
+seed_policy:
+  initial_seeds: [42]
+  confirmation_seeds: [17, 123, 314]
+
+model:
+  name: null
+  revision: null
+
+data:
+  name: null
+  train_split: train
+  eval_split: validation
+
+training:
+  framework: trl
+  method: null
+  max_steps: null
+
+evaluation:
+  primary_metric: null
+  higher_is_better: true
+
+compute:
+  preference:
+    - local
+    - kaggle
+    - hf_jobs
+  gpu_required: null
+  timeout_minutes: 60
+
+permissions:
+  use_kaggle_free_compute: true
+  use_paid_compute: false
+  max_paid_compute_usd: 0.0
