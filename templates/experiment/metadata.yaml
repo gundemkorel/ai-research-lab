@@ -1,0 +1,17 @@
+experiment_id: "{{EXPERIMENT_ID}}"
+title: "{{TITLE}}"
+slug: "{{SLUG}}"
+created_at: "{{CREATED_AT}}"
+status: planned
+
+research_type: exploratory
+
+budgets:
+  max_runs: 12
+  max_wall_time_hours: 4
+  max_paid_compute_usd: 0.0
+
+permissions:
+  use_kaggle_free_compute: true
+  use_paid_compute: false
+  modify_evaluation_protocol: false
