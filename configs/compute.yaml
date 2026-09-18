@@ -1,0 +1,32 @@
+# Lab-wide defaults. Individual experiments may be stricter.
+compute:
+  preference:
+    - local
+    - kaggle
+    - hf_jobs
+
+  local:
+    enabled: true
+
+  kaggle:
+    enabled: true
+    paid: false
+    timeout_minutes: 60
+    accelerator: NvidiaTeslaT4
+
+  hf_jobs:
+    enabled: true
+    paid: true
+    authorized_by_default: false
+    default_flavor: t4-small
+    timeout_minutes: 30
+
+budgets:
+  default_max_runs_per_experiment: 12
+  default_max_paid_compute_usd: 0.0
+  default_max_wall_time_hours: 4
+
+policy:
+  smoke_test_before_remote_gpu: true
+  require_explicit_paid_compute_authorization: true
+  prefer_free_compute_when_scientifically_equivalent: true
