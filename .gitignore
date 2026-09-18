@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+
+# Model / large artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+checkpoints/
+wandb/
+
+# Experiment runtime artifacts (keep summaries/configs in git)
+experiments/**/runs/**/stdout.log
+experiments/**/runs/**/stderr.log
+experiments/**/runs/**/artifacts/
+experiments/**/runs/**/checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
