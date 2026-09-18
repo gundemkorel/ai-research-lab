@@ -1,0 +1,31 @@
+[project]
+name = "ai-research-lab"
+version = "0.1.0"
+description = "Agent-first template for small-scale AI research experiments"
+requires-python = ">=3.11"
+dependencies = [
+  "accelerate>=1.0",
+  "datasets>=3.0",
+  "huggingface-hub>=0.30",
+  "pandas>=2.2",
+  "peft>=0.14",
+  "pyyaml>=6.0",
+  "torch>=2.4",
+  "transformers>=4.50",
+  "trl>=0.16",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.9",
+]
+kaggle = [
+  "kaggle>=1.7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
