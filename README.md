@@ -53,7 +53,7 @@ ai-research-lab/
 ```bash
 git clone <your-repo-url> ai-research-lab
 cd ai-research-lab
-./scripts/bootstrap.sh
+bash scripts/bootstrap.sh
 ```
 
 The bootstrap script installs the Python environment with `uv` when available and gives instructions for Hugging Face agent skills.
